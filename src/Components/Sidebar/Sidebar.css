@@ -1,0 +1,45 @@
+.sidebar-form{
+    background-color: white;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 7px;
+}
+
+.item{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.button-item:hover{
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.content{
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.button-item{
+    text-decoration: none;
+    margin-left: 5px;
+    padding-left: 10px;
+    margin-right: 20px;
+}
+
+.button-item-active{
+    text-decoration: none;
+    margin-left: 5px;
+    padding-left: 10px;
+    margin-right: 20px;
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+    cursor: pointer;
+}

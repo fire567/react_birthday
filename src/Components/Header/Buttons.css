@@ -1,0 +1,41 @@
+
+.btn-form{
+   margin-left: 40px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 7px;
+   padding-bottom: 7px;
+   list-style-type: none;
+   
+}
+
+.btn-form:hover{
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+.btn-form-active{
+    margin-left: 40px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 7px;
+   padding-bottom: 7px;
+   list-style-type: none;
+   background-color: white;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+.buttons{
+    padding-top: 23px;
+    display: flex;
+    padding-left: 470px;
+}
+
+.button{
+    text-decoration: none
+}
+

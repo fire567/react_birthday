@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import Header from "./Components/Header/Header";
+import Letters from "./Components/Letters/Letters";
+import Us from "./Components/Us/Us";
+import axios from "axios";
+import { Route } from "react-router-dom";
+
+import "./App.css";
 
 function App() {
+  const [ activities, setActivities] = useState("")
+  const [letters, setLetters] = useState("")
+  const [us, setUs] = useState("")
+
+  useEffect(() => {
+    axios.get("http://localhost:3000/db.json").then(({data}) => {
+      setActivities(data.activities);
+      setLetters(data.letters);
+      setUs(data.us);
+    });
+  }, []);
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Header activities={activities}/>
+        <div className="content">
+          <Route path="/letters" render={() => <Letters items={letters}/>} exact/>
+          <Route path="/us" render={() => <Us items={us}/>} exact/>
+        </div>
     </div>
   );
 }

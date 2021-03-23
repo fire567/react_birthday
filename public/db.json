@@ -1,0 +1,67 @@
+{
+    "activities" : [
+        {
+            "name": "стихи",
+            "id": "0",
+            "URL": "letters"
+        },
+
+        {
+            "name": "мы",
+            "id": "1",
+            "URL": "us"
+        },
+
+        {
+            "name": "рисунки",
+            "id": "2",
+            "URL": "drawing"
+        },
+
+        {
+            "name": "достижения",
+            "id": "3",
+            "URL": "achivments"
+        },
+
+        {
+            "name": "пение",
+            "id": "4",
+            "URL": "singing"
+        }
+    ],
+
+    "letters" : [
+        {
+            "name": "агония",
+            "id": "0",
+            "url": "/images/agony.PNG"
+        },
+
+        {
+            "name": "администрации",
+            "id": "1",
+            "url": "/images/administracia.PNG"
+        },
+
+        {
+            "name": "алкоголичка",
+            "id": "3",
+            "url": "/images/alcoholic.PNG"
+        }
+
+    ],
+
+    "us" : [
+        {
+            "name": "поле",
+            "id": 0
+        },
+
+        {
+            "name": "лес",
+            "id": 1
+        }
+    ]
+}
+
